@@ -49,22 +49,6 @@ The neural network consists of:
 * Loss functions and optimizers
 * Making predictions and evaluating accuracy
 
-## ▶️ How to Run
-
-Clone this repository:
-
-```bash
-git clone https://github.com/I-Karthik-L/DL-from-scratch-projects.git
-```
-
-Install the required libraries:
-
-```bash
-pip install tensorflow numpy matplotlib
-```
-
-Then open and run the `ANN.ipynb` notebook using Jupyter Notebook or Google Colab.
-
 ## 🎯 Learning Goal
 
 This project is part of my **Deep Learning journey**, where I build projects from scratch to better understand the core concepts of Deep Learning through hands-on implementation.
