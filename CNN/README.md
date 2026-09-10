@@ -68,18 +68,6 @@ scikit-learn
 | + Augmentation | 80% |
 | + Transfer Learning (ResNet50) | 88% |
 
-*(Fill these in from your notebook outputs — the accuracy generally improves as augmentation and transfer learning are added.)*
-
-## 🔍 Notes, Corrections & Future Improvements
-
-Being transparent about what I'd change if I revisited this:
-
-- **Validation/test overlap:** across all three notebooks, the same held-out set is used both as the training-time validation set (including for `EarlyStopping`'s best-weights selection) *and* as the final test set. This can inflate the reported test accuracy slightly, since the model selection is implicitly informed by that same data. A proper 3-way split (train / validation / test) would give a more honest number.
-- **Missing `None` checks on image loads:** `cv2.imread()` returns `None` for unreadable files, which is currently only caught indirectly via a generic `try/except`. Explicit `if img is None: continue` with a counter would make data-quality issues visible.
-- **ResNet50 preprocessing:** notebook 3 normalizes with plain `/255.0`, but ResNet50 was trained with `tensorflow.keras.applications.resnet50.preprocess_input`, which does mean-subtraction rather than simple scaling. Switching to it would better match the pretrained weights.
-- **Input resolution for transfer learning:** images are resized to 100×100, well below ResNet50's native 224×224 — it still runs (thanks to global average pooling), but a larger input size would likely help.
-- **No fine-tuning stage:** notebook 3 keeps the ResNet50 base fully frozen. A natural next step is unfreezing the top few blocks and fine-tuning at a low learning rate.
-- **No class-balance check or confusion matrix:** for a medical-imaging task, it's worth confirming the two classes are reasonably balanced and looking at precision/recall, not just accuracy.
 
 ## 🙏 Acknowledgments
 
