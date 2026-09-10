@@ -30,7 +30,7 @@ Brain_Tumor/
 ├── yes/
 └── no/
 ```
-*(Add a link to the exact dataset you used — e.g. the Kaggle "Brain MRI Images for Brain Tumor Detection" dataset — so others can reproduce this.)*
+*(Data_set is provided as zip file in the repository,you can download it.)*
 
 ## 🚀 Getting Started
 
@@ -64,9 +64,9 @@ scikit-learn
 
 | Notebook | Test Accuracy |
 |----------|:---:|
-| Basic CNN | _fill in_ |
-| + Augmentation | _fill in_ |
-| + Transfer Learning (ResNet50) | _fill in_ |
+| Basic CNN | 69% |
+| + Augmentation | 75% |
+| + Transfer Learning (ResNet50) | 80% |
 
 *(Fill these in from your notebook outputs — the accuracy generally improves as augmentation and transfer learning are added.)*
 
@@ -85,6 +85,4 @@ Being transparent about what I'd change if I revisited this:
 
 Built as a hands-on introduction to CNNs and transfer learning for image classification.
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
