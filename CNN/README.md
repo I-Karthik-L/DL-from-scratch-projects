@@ -12,7 +12,7 @@ cnn/
 └── README.md
 ```
 
-> Rename the notebooks to match this structure (or update the table below) — I used the original filenames (`CNN.ipynb`, `CNN_ImageAugmentation.ipynb`, `CNN_Imgaug_Trnsfrlrng.ipynb`) while learning.
+
 
 ## 🧠 What's in Each Notebook
 
