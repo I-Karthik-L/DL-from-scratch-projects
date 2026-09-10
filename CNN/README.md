@@ -64,9 +64,9 @@ scikit-learn
 
 | Notebook | Test Accuracy |
 |----------|:---:|
-| Basic CNN | 69% |
-| + Augmentation | 75% |
-| + Transfer Learning (ResNet50) | 80% |
+| Basic CNN | 76% |
+| + Augmentation | 80% |
+| + Transfer Learning (ResNet50) | 65% |
 
 *(Fill these in from your notebook outputs — the accuracy generally improves as augmentation and transfer learning are added.)*
 
