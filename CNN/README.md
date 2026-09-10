@@ -66,7 +66,7 @@ scikit-learn
 |----------|:---:|
 | Basic CNN | 76% |
 | + Augmentation | 80% |
-| + Transfer Learning (ResNet50) | 65% |
+| + Transfer Learning (ResNet50) | 88% |
 
 *(Fill these in from your notebook outputs — the accuracy generally improves as augmentation and transfer learning are added.)*
 
