@@ -49,11 +49,7 @@ Retrieval for a question about cat speed returned:
 
 The retriever found the right fact first, which is the part RAG is responsible for.
 
-## Things I noticed
 
-- **Retrieval worked, generation didn't.** The 1B model ignored the "don't make up information" instruction: it invented a "6 minutes" figure and did a made-up calculation. Small models struggle to stay grounded in context, so a bigger model or a stricter prompt is the fix.
-- The output looks spaced out (`C ats  are  known`) because each streamed token is printed with an extra space (`end=" "`). Using `end=""` fixes it.
-- The in-memory list works for 10 chunks but doesn't scale; a real vector store (Qdrant, FAISS, Chroma) would be the next step.
 
 ## Next steps
 
